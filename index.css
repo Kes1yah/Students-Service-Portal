@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Profile and Notification Icons Styling */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.profile-icon, .notification-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-icon img, .notification-icon img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+/* Notification Box Styling */
+.notification-box {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1;
+    width: 200px;
+    text-align: center;
+}
+
+.notification-box p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.notification-box.active {
+    display: block;
+}
+
+/* Content Area */
+.content {
+    margin-left: 20px;
+    padding-top: 60px; /* Offset for fixed header */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Content Area */
+.content {
+    margin-left: 20px; /* Margin to avoid overlap with menu icon */
+    padding: 20px;
+}
+
+/* Content Area */
+.content {
+    margin-left: 200px; /* Leave space for sidebar */
+    padding: 20px;
+    width: calc(100% - 200px); /* Adjust width for sidebar */
+}
+
+/* Services Section Styling */
+#services {
+    padding: 20px;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.service h3 a.btn {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.service p {
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+    .content {
+        margin-left: 150px;
+        width: calc(100% - 150px);
+    }
+}
+
+
+header {
+    background-image: url('engineering-college-aboutus_Feb-05-transformed.jpeg'); /* Path to your image */
+    background-size:cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-color: rgba(255, 255, 255, 0.5); /* Adds a light overlay */
+    background-blend-mode: lighten;
+    padding: 40px 20px; /* Adjust padding to give more space for text */
+    text-align: center; /* Center header text */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Increase font size for header */
+    text-align: center;
+    text-shadow: #666;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the navigation links */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+#welcome {
+    background: #e9ecef;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 1px 2px;
+    background:white;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.service {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#request-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select,
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}

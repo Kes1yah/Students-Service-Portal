@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Service Portal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Student Service Portal</h1>
+        <h2> Saintgits College of Engineering</h2>
+        <div class="icons">
+            <!-- Notification Icon -->
+            <div class="notification-icon" onclick="toggleNotification()">
+                <img src="notof2.png" alt="Notifications">
+                <div id="notificationBox" class="notification-box">
+                    <p>No notifications</p>
+                </div>
+            </div>
+            <!-- Profile Icon -->
+            <div class="profile-icon" onclick="toggleDropdown()">
+                <img src="no-dp_16.webp" alt="Profile">
+                <div id="profileDropdown" class="dropdown-menu">
+                    <a href="profile.html">Profile</a>
+                    <a href="applications.html">Applications</a>
+                    <a href="help.html">Help</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="service">
+            <div class="service">
+                <h3><a href= request.html class="btn"> Permission Management</a></h3>
+                <p>Permissions, Duty leaves and other permissions.</p>
+            </div>
+            <div class="service">
+                <h3><a class="btn">Classroom Booking</a></h3>
+                <p>Seminar halls, classroom availablity and booking facilities.</p>
+            </div>
+            <div class="service">
+                <h3><a class="btn">Uniform orders</a></h3>
+                <p>Uniform orders and availablity.</p>
+            </div>
+            <div class="service">
+                <h3><a class="btn">Faculty Availability</a></h3>
+                <p>Faculty availablity and timetable.</p>
+            </div>
+            <div class="service">
+                <h3><a class="btn">Academic Plan</a></h3>
+                <p>Academic calender and Room locations. </p>
+            </div>
+            <div class="service">
+                <h3><a class="btn">Curriculum</a></h3>
+                <p>B.Tech Curriculum and Semester-wise syllabus</p>
+            </div>
+            <div class="service">
+                <h3><a class="btn">Events</a></h3>
+                <p>Details on upcoming academic events and registerations.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2024 Student Services Portal </p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

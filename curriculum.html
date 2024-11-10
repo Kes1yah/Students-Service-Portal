@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Curriculum & Syllabus</title>
+    <link rel="stylesheet" href="curriculum.css">
+</head>
+<body>
+
+    <header>
+        <div class="icon-container">
+            <!-- Notifications Icon - Bell -->
+            <div class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1827/1827369.png" alt="Notifications Icon">
+                <div class="dropdown-content">
+                    <a href="#">All Notifications</a>
+                    <a href="#">Unread</a>
+                </div>
+            </div>
+            <!-- Profile Icon -->
+            <div class="icon profile-icon">
+                <img src="no-dp_16.webp" alt="Profile Icon">
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="applications.html">Applications</a>
+                    <a href="help.html">Help</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="download-section">
+            <h2>Download Resources</h2>
+            <p>Get the latest B.Tech Curriculum and Syllabus documents.</p>
+            <div class="download-buttons">
+                <!-- Curriculum Button with Dropdown for Each Year -->
+                <div class="dropdown">
+                    <button class="btn" onclick="toggleCurriculumDropdown()">B.Tech Curriculum</button>
+                    <div class="dropdown-content" id="curriculumDropdown">
+                        <a href="https://drive.google.com/file/d/19VryKiBNQ9DdvUMCxCg_b15xjpGXGdFZ/view?usp=drive_link" download>CS</a>
+                        <a href="curriculum_2nd_year.pdf" download> EC</a>
+                        <a href="curriculum_3rd_year.pdf" download>ER</a>
+                        <a href="curriculum_4th_year.pdf" download>EV</a>
+                        <a href="curriculum_4th_year.pdf" download>RB</a>
+                        <a href="curriculum_4th_year.pdf" download>EEE</a>
+                        <a href="https://drive.google.com/file/d/19IH4s0DuVLPLxQbP8lqIJAhpW5tDjrAK/view?usp=drive_link" download>CH</a>
+                        <a href="https://drive.google.com/file/d/1epNejoWyQlm9RUvXAis1V-UEzCnoK0CA/view?usp=drive_link" download>CE</a>
+                        <a href="curriculum_4th_year.pdf" download>FT</a>
+                    </div>
+                </div>
+
+                <!-- Syllabus Button that Links to Another Page -->
+                <a href="syllabus.html" class="btn">Syllabus</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Function to toggle the curriculum dropdown visibility
+        function toggleCurriculumDropdown() {
+            document.getElementById("curriculumDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

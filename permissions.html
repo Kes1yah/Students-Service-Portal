@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Letters and Duty Leaves</title>
+    <link rel="stylesheet" href="permissions.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>Request Letters and Duty Leaves</h1>
+        <div class="icon-container">
+            <!-- Notifications Icon - Bell -->
+            <div class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1827/1827369.png" alt="Notifications Icon">
+                <div class="dropdown-content">
+                    <a href="#">All Notifications</a>
+                    <a href="#">Mark All as Read</a>
+                </div>
+            </div>
+            <!-- Profile Icon -->
+            <div class="icon">
+                <img src="no-dp_16.webp" alt="Profile Icon" class="profile-icon">
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="request-form">
+        <h2>Request Form</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="name">Name of the Applicant:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="CS">CS</option>
+                <option value="EC">EC</option>
+                <option value="EEE">EEE</option>
+                <option value="RB">RB</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+                <option value="CH">CH</option>
+                <option value="FT">FT</option>
+            </select>
+            
+            <label for="requestType">Request Type:</label>
+            <select id="requestType" name="requestType" required>
+                <option value="" disabled selected>Select Request Type</option>
+                <option value="permission">Permission Letter</option>
+                <option value="dutyLeave">Duty Leave</option>
+                <option value="other">Others (specify)</option>
+            </select>
+            
+            <label for="requestLevel">Request Level:</label>
+            <select id="requestLevel" name="requestLevel" required>
+                <option value="" disabled selected>Select Request Level</option>
+                <option value="Clubs">College Clubs</option>
+                <option value="Department">Department Level</option>
+                <option value="Institution">Institution Level</option>
+                <option value="State">State Level</option>
+                <option value="National/International">National/International Level</option>
+            </select>
+            
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+
+            <label for="fileUpload">Upload File (PDF/Image):</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept="application/pdf, image/*" required>
+
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>
